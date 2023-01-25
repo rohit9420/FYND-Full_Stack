@@ -1,0 +1,16 @@
+$ git config --global user.name "rohit9420"
+$ git config --global user.email "rohitmoriya499@gmail.com"
+$ git config --global core.editor vs
+$ git init
+$ touch index.html contact.html about.html
+$ git status
+$ git add --a
+$ git rm index.html
+$ ls
+$ git remote add origin "paste your repository link"
+$ git remote -v
+$ git push origin master
+
+
+$ git commit -a -m "reason"
+$ git rm --cached git
