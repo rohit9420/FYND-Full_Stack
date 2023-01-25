@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(https://zoomquilt.org/);
+            background-size: cover;
+        }
+        
+        #pwd{
+            -webkit-text-security : square;
+            -webkit-text-security : circle;
+        }
+        #MyForm{
+            background-color: rgba(123, 212, 245, 0.637);
+            margin-left: 100px;
+            margin-right: 100px;
+            font-weight: bold;
+        }
+        label{
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="MyForm">
+        <h1>Order Now</h1>
+    <form action="">
+        <!-- lable describes the input field -->
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" placeholder="Enter first name"><br><br>
+        <label for="secondname">Last Name:</label>
+        <input type="text" id="lastname" placeholder="Enter last name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="mail" placeholder="Enter mail Id"><br><br>
+        <label for="secondname">Password:</label>
+        <input type="text" name="pwd" id="pwd" placeholder="Enter password"><br><br>
+        <br>
+        <br>
+        <label for="subject">Payment:</label><br>
+        <input type="radio" name="ya" id="html">
+        <label for="html">Cash on delivery</label><br>
+        <input type="radio" name="ya" id="css">
+        <label for="html">Credit/Debit Card</label><br>
+        <input type="radio" name="ya" id="js">
+        <label for="html">UPI</label><br><br>
+        <label for="skill">Food Items:</label><br>
+        <input type="checkbox" name="F1" id="f1"><label for="B1">Lassi</label>
+        <input type="checkbox" name="F2" id="f2"><label for="B2">Butter Milk</label>
+        <input type="checkbox" name="F3" id="f3"><label for="B3">Jeera Soda</label><br>
+        <input type="checkbox" name="F4" id="f4"><label for="M1">Butter Paneer</label>
+        <input type="checkbox" name="F5" id="f5"><label for="M2">Sev Bhaji</label>
+        <input type="checkbox" name="F6" id="f6"><label for="M3">Mix Veg</label><br>
+        <input type="checkbox" name="F7" id="f7"><label for="C1">Roti</label>
+        <input type="checkbox" name="F8" id="f8"><label for="C2">Butter Roti</label>
+        <input type="checkbox" name="F9" id="f9"><label for="C3">Butter Naan</label><br><br>
+
+        <label for="town">Order Location:</label><br>
+        <select multiple size="5">
+            <option value="cities" disabled>Choose City</option>
+            <option value="mub">Mumbai</option>
+            <option value="nsk">Nashik</option>
+            <option value="pn">Pune</option>
+            <option value="dl">Delhi</option>
+            <option value="bg">Banglore</option>
+        </select>
+        <br><br>
+
+        <label for="discription">Address:</label><br>
+        <textarea name="message" id="msg" cols="50"
+            rows="5"></textarea>
+        <br><br>
+        <input type="submit" name="" id="" value="Click">
+        <input type="reset" value="Reset">
+        <button>Order</button>
+    </form>
+
+</div>
+</body>
+
+</html>
