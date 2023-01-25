@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url(/background.jpg);
+            background-size: cover;
+        }
+
+        .logo img {
+            height: 200px;
+            width: 200px;
+            margin: -28px;
+            padding: 0px;
+
+        }
+
+        .logo {
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .logo img:hover {
+            height: 250px;
+            width: 250px;
+        }
+
+        #reg_form {
+            background-color: grey;
+            margin-left: 500px;
+            margin-right: 500px;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+
+
+        }
+
+        #reg_form:hover {
+            border-radius: 15px;
+        }
+
+
+        .inp {
+            float: right;
+            margin-right: 200px;
+            border-radius: 5px;
+            text-align: center;
+            padding: 3px;
+            border: none;
+        }
+
+        .inp:hover {
+            border-radius: 15px;
+        }
+
+        #btn {
+            border-radius: 10px;
+            background-color: yellow;
+            color: black;
+            border: none;
+            padding: 7px;
+            margin: 5px;
+
+        }
+
+        #btn:hover {
+            border-radius: 20px;
+            background-color: black;
+            color: yellow;
+            font-weight: bold;
+        }
+
+        select {
+            padding: 3px;
+            border: none;
+        }
+
+        h1 {
+            color: yellow;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="/logo.png" alt="logo">
+        <h1>GYM REGISTRATION</h1>
+    </div>
+
+    <div id="reg_form">
+        <form action="">
+            <label for="fname">Full Name :</label>
+            <input type="text" name="fname" placeholder="Enter Full Name" class="inp"><br><br>
+
+            <label for="dob">Date of Birth :</label>
+            <input type="date" name="dob" placeholder="Enter DOB" class="inp"><br><br>
+
+            <label for="age">AGE :</label>
+            <input type="number" name="age" placeholder="Enter AGE" class="inp"><br><br>
+
+            <label for="Contact">Contact Number :</label>
+            <input type="number" name="contact" placeholder="Enter Number" class="inp"><br><br>
+
+            <label for="mail">E-Mail :</label>
+            <input type="email" name="mail" placeholder="Enter Mail" class="inp"
+                style="-webkit-text-security: square;"><br><br>
+
+            <label for="gender">Gender :</label><br>
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" value="male">
+            <label for="gender">Female</label>
+            <input type="radio" name="gender" value="female"><br><br>
+
+            <label for="act">Which activity would you participate?</label><br><br>
+            <input type="checkbox" name="act" id="yoga">
+            <label for="yoga">Yoga </label> <br>
+            <input type="checkbox" name="act" id="cardio">
+            <label for="cardio">Cardio </label><br>
+            <input type="checkbox" name="act" id="wt">
+            <label for="wt">Weight Training </label><br>
+            <input type="checkbox" name="act" id="zumba">
+            <label for="Zumba">Zumba</label><br><br>
+
+            <label for="city">Choose a Your City:</label><br><br>
+
+            <select name="city" id="city" multiple size="1">
+                <option value="" disabled selected value>Choose city</option>
+                <option value="Nashik">Nashik</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Hydrabad">Hydrabad</option>
+                <option value="Pune">Pune</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit" id="btn">
+            <input type="reset" value="Reset" id="btn">
+
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

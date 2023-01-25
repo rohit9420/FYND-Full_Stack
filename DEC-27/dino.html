@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosaur</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos praesentium ratione eum, facilis voluptatum cupiditate voluptatem molestiae labore adipisci magnam at tenetur repellendus nemo perspiciatis illum id? Modi, possimus architecto!</p>
+    </div>
+
+    <!-- <script>
+        const demo1=document.getElementById('demo');
+        ['mousedown','mouseup'].forEach(type=>{
+            if(type==='mouseover'){
+                demo1.addEventListener(type,()=>console.log('mouse down'));
+            }
+            else if (type==='mouseout'){
+                demo1.addEventListener(type,()=>console.log('mouse up'));
+            }
+        })
+    </script> -->
+    <script>
+        const demo1=document.getElementById('demo');
+        ['mouseover','mouseout'].forEach(type=>{
+            if(type==='mouseover'){
+                demo1.addEventListener(type,()=>console.log('mouse down'));
+            }
+            else if (type==='mouseout'){
+                demo1.addEventListener(type,()=>console.log('mouse up'));
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <style>
+        .container{
+            display: flex;
+            margin: 10px;
+            padding: 10px;
+        }
+        .box{
+            margin: 5px;
+            width: 340px;
+            height:340px;
+            display: inline-block;
+    
+        }
+        .box p{
+            color: black;
+            font-size: larger;
+        }
+        .timebox1{
+            background-image: url(./india-vector.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .timebox2{
+            background-image: url(./ger.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .timebox3{
+            background-image: url(./australia.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <!-- <p id="demo"></p> -->
+    <div class="container">
+        <div class="timebox1 box">
+            <h1>India</h1>
+            <p id="indiatime"></p>
+        </div>
+        <div class="timebox2 box">
+            <h1>Germany</h1>
+            <p id="germantime"></p>
+        </div>
+        <div class="timebox3 box">
+            <h1>Australia</h1>
+            <p id="austime"></p>
+        </div>
+        
+    </div>
+    <script>
+        var indiantime = function(){
+            document.getElementById("indiatime").innerHTML=new Date().toLocaleString('en-US' , {timeZone:'Asia/kolkata',timeStyle:'full',hourCycle:'h12'})
+        }
+        indiantime();
+        setInterval(indiantime,1000)
+
+
+        var germanTime = function(){
+            document.getElementById("germantime").innerHTML=new Date().toLocaleString('en-US' , {timeZone:'Europe/Berlin',timeStyle:'full',hourCycle:'h12'})
+        }
+        germanTime();
+        setInterval(germanTime,1000)
+
+        var ausTime = function(){
+            document.getElementById("austime").innerHTML=new Date().toLocaleString('en-US' , {timeZone:'Australia/Sydney',timeStyle:'full',hourCycle:'h12'})
+        }
+        ausTime();
+        setInterval(ausTime,1000)
+
+
+
+
+
+    </script>
+</body>
+</html>

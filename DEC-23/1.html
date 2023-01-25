@@ -1,0 +1,121 @@
+<!-- lexical scope -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical Scope</title>
+</head>
+<body>
+    <!--  
+   <script>
+
+        function show(){
+            let e='abc';
+            console.log('name is ' + a);
+        }
+
+        let d=67;
+
+
+        function outer(){
+            let a=6;
+            console.log(a)
+            console.log(e);
+            function inner(){
+                let b=7;
+                console.log(a);
+                console.log(e);
+
+            }
+            inner();
+            console.log(d);
+        }
+        outer();
+    </script>
+-->
+<p id="demo"></p>
+<p id="p1"></p>
+
+<h1>Clouser</h1>
+<button type="button">Count</button>
+<p id="p2"></p>
+<script>
+    // sum(5,10);
+    // (function sum(a,b){
+    //     add = a+b;
+    //     console.log('sum is ' + add);
+    // })
+
+    // sum(5,10)
+    // sum(5,6)
+    //     var sum = function(a,b){
+    //         add = a+b;
+    //         console.log("add is " 
+    //         +add);
+
+    //     }
+    
+    function sum(a,b){
+        add = a+b;
+        return add;
+    }
+    // sum(5,9);
+    document.getElementById("demo").innerHTML=sum(5,9)
+
+    const Addition=(a,b)=>{
+        add=a+b;
+        return add;
+    }
+    // Addition(10,20);
+    document.getElementById("p1").innerHTML=Addition(10,20);
+
+    
+    // clouser is combination of lexical scope and lexical environment
+    // function x(){
+    //     var a=7;
+    //     function y(){
+    //         // console.log('hello' + a);
+    //         return ('hello' + a);
+    //     }
+    //     return y;
+    // }
+    // var z=x()
+    // console.log(z)
+    // z()
+        // function abc(){
+        //     console.log("1")
+        //     var a=7;
+        //     function y(){
+        //         console.log("3")
+        //         console.log(a);
+        //     }
+        //     console.log("2")
+        //     a=100;
+        //     console.log("4")
+        //     return y;
+        // }
+
+        // var z=abc();
+        // console.log("5")
+        // z();
+        // console.log("6")
+
+            const add=(function(){
+                let counter=0;
+            return function(){
+                counter+=1;
+                return counter;
+            }
+        })();
+        function show(){
+            document.getElementById('p3').innerHTML=add()
+        }
+
+
+</script>
+    
+</body>
+</html>

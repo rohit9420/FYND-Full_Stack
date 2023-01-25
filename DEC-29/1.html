@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Welcome Guys</p>
+    <p id="demo">Search and IndexOff</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        
+        // function show(){
+        //     let str=document.getElementById('demo').innerHTML;
+        //     document.getElementById('demo1').innerHTML=str.replace("guys/gi," , "students");
+        // }
+        // show();
+        function show(){
+            let str=document.getElementById('demo').innerHTML;
+            document.getElementById('demo1').innerHTML=str.toUpperCase();
+            document.getElementById('demo2').innerHTML=str.toLocaleLowerCase();
+            document.getElementById('demo3').innerHTML=str.toLowerCase();
+            document.getElementById('demo4').innerHTML=str.toLocaleUpperCase();
+
+
+        }
+        show();
+    </script>
+</body>
+</html>

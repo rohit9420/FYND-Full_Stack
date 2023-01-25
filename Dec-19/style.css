@@ -1,0 +1,18 @@
+:root{
+    --color-primary:#4567ec;
+    --color-danger:#ffa500;
+
+}
+html{
+    font-size: 15px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: orange;
+
+}
+
+

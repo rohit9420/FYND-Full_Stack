@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'main main section sidebar';
+        }
+        .box{
+            background-color: aqua;
+            border:2px solid red;
+            padding: 12px 23px;
+            margin: 2px;
+        }
+        .header{
+            grid-area: navbar;
+        }
+        .section{
+            grid-area: section;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+    </style>
+</head>
+<body>
+    <h1>Learning Grid</h1>
+
+    <div class="main box">
+        <div class="header box">
+            Home AboutUs Contact
+        </div>
+        <div class="section box">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, temporibus nisi reiciendis expedita officia quae voluptatem in impedit esse veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ducimus, ratione nemo dolorum explicabo sed autem dicta placeat eos. Ipsam!
+        </div>
+        <div class="sidebar box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, itaque?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate repellat, perferendis consequatur perspiciatis asperiores provident quos quibusdam ipsum neque labore dolore amet obcaecati ab minus nostrum sunt quidem sed doloribus?</div>
+
+    </div>
+</body>
+</html>

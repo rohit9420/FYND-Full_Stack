@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        
+        .box-1{
+            color: rgb(4, 144, 251);
+            position: relative;
+            border: 2px solid gray;
+            background-color: rgb(255, 0, 0);
+            display: inline-block;
+            top:50% ;
+            left: -800px;
+            animation: abc 0.5s 1s;
+            animation-fill-mode: both;
+        }
+        @keyframes abc {
+            from{
+                top: 300px;
+                right: -300px;
+            }
+            to{
+                top: 300px;
+                left: 600px;
+                background-color: rgb(156, 236, 76);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1">
+        <h1>Transaction Completed</h1>
+    </div>
+</body>
+</html>

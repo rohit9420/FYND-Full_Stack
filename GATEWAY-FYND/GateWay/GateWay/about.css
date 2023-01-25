@@ -1,0 +1,66 @@
+body{
+	background-color: white;
+	margin-top: 4mm;
+	background-image: url(peaky.jpg);
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/*Navbar */
+#navbar{
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 0px;
+}
+/*Navigation Bar:List styling
+#navbar{
+	position: relative;
+}*/
+#navbar ul{
+	display: flex;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    
+}
+#navbar ul li{
+	list-style: none;
+	font-size: 1.3rem;
+}
+#navbar ul li a{
+	color: white;
+	display: block;
+	padding: 5px 40px;
+	border-radius: 50px;
+	text-decoration: none;
+}
+#navbar ul li a:hover{
+	color: black;
+	background-color: white;
+}
+
+
+#content{
+	position: relative; left: 5.5%; top: -7mm;
+	opacity: 0.6;
+	background-color: black;
+	color: white;
+	box-shadow: none;
+	width: 84%;
+	padding: 30px;
+	padding-bottom: 8px;
+    text-align: center;
+}
+
+

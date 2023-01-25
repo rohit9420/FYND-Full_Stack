@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            border: 2px solid red;
+            display: flex;
+            padding: 10px;
+            margin: 2px;
+        }
+        .div1{
+            border: 1px solid black;
+            /* display: flex; */
+            flex-direction: column;
+            /* padding: 30px; */
+            margin: 2px;
+            /* height: 10vh; */
+            width: 30%;
+            padding: 1px;
+            justify-content:space-around;
+        }
+        
+        .div3{
+            width: 30%;
+            border: 1px solid black;
+            /* display: flex; */
+            padding: 30px;
+            margin: 2px;
+        }
+        
+        .grid{
+            border: 1px solid red;
+            /* margin: 2px; */
+        }
+        .box1{
+            background-color: aqua;
+            height: 10vh;
+        }
+        .box2{
+            background-color: rgb(217, 0, 255);
+            height: 10vh;
+
+        }
+        .box3{
+            background-color: rgb(255, 174, 0);
+            height: 10vh;
+
+        }
+        /*******************************/
+
+        .div2{
+            border: 1px solid black;
+            /* display: flex; */
+            /* flex-basis:20px; */
+            padding: 30px;
+            width: 30%;
+            margin: 2px;
+            flex-shrink: 5;
+        }
+        .grid2{
+            border: 1px solid red;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="div1">
+        <div class="box1 grid">BOX-1</div>
+        <div class="box2 grid">BOX-2</div>
+        <div class="box3 grid">BOX-3</div>
+        </div>
+        <div class="div2"><h2>Flex shrink</h2>
+            <!-- <div class="box4 grid2">BOX-4</div>
+            <div class="box5 grid2">BOX-5</div>
+            <div class="box6 grid2">BOX-6</div> -->
+        </div>
+        <div class="div3">BOX-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptatem distinctio laboriosam magnam necessitatibus dolor ad ea suscipit pariatur harum!</div>
+    </div>
+</body>
+</html>

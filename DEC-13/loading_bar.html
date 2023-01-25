@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Bar</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+
+        .box {
+            display: inline;
+
+
+
+
+        }
+
+        .box div {
+            width: 100px;
+            height: 100px;
+        }
+
+        .right {
+            border-left: 4px solid black;
+            position: relative;
+            top: 204px;
+            left: 926px;
+            animation: right 6s linear infinite alternate;
+        }
+
+        @keyframes right {
+            from {
+                top: 204px;
+                left: 926px;
+
+            }
+
+            to {
+                top: 200px;
+                left: 750px;
+            }
+
+        }
+
+        .top {
+            border-bottom: 4px solid yellow;
+            position: relative;
+            top: 32px;
+            left: 900px;
+            animation: top 6s linear infinite alternate;
+        }
+
+        @keyframes top {
+            from {
+                top: 32px;
+                left: 900px;
+
+            }
+
+            to {
+                top: -150px;
+                left: 900px;
+            }
+
+        }
+
+
+        .bottom {
+            border-top: 4px solid blue;
+            position: relative;
+            top: -34px;
+            left: 904px;
+            animation: bottom 6s linear infinite alternate;
+        }
+
+        @keyframes bottom {
+            from {
+                top: -34px;
+                left: 904px;
+
+            }
+
+            to {
+                top: 150px;
+                left: 900px;
+            }
+
+        }
+
+
+
+
+
+        .left {
+            border-left: 4px solid red;
+            position: relative;
+            top: 0px;
+            left: 969px;
+            animation: left 6s linear infinite alternate;
+
+
+        }
+
+        @keyframes left {
+            from {
+                top: 0px;
+                left: 969px;
+
+            }
+
+            to {
+                top: 0px;
+                left: 1150px;
+            }
+
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+    <div class="box">
+
+        <div class="right"></div>
+        <div class="top"></div>
+        <div class="left"></div>
+        <div class="bottom"></div>
+
+
+    </div>
+
+
+</body>
+
+</html>

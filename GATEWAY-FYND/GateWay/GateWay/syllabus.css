@@ -1,0 +1,208 @@
+body{
+	background-color: white;
+	margin-top: 4mm;
+	background-image: url(1.jpg);
+	background-attachment: fixed;
+}
+
+
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/*Navbar */
+#navbar{
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 0px;
+}
+/*Navigation Bar:List styling
+#navbar{
+	position: relative;
+}*/
+#navbar ul{
+	display: flex;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    
+}
+#navbar ul li{
+	list-style: none;
+	font-size: 1.3rem;
+}
+#navbar ul li a{
+	color: black;
+	display: block;
+	padding: 5px 40px;
+	border-radius: 50px;
+	text-decoration: none;
+}
+#navbar ul li a:hover{
+	color: white;
+	background-color: black;
+}
+
+
+#content{
+	position: relative; left: 3%; top: -8mm;
+	opacity: 0.8;
+	background-color: black;
+	color: white;
+	box-shadow: none;
+	width: 84%;
+	padding: 50px;
+	margin: 20px;
+	padding-bottom: 35px;
+}
+
+
+
+table {
+	font-family: 'Orbitron', sans-serif;
+    border-collapse: collapse;
+    width: 52%;
+    font-size: 15px;
+}
+
+td, th {
+  border: 1px solid white;
+  text-align: left;
+  padding: 8px;
+}
+
+	
+td:hover{
+	color: red;
+}
+
+
+.papers{
+	background-color: #1a1a1a;
+	color: white;
+	z-index: 1;
+	padding: 10px;
+	position: absolute;
+	position: absolute; top: 10%; left: 35%;
+	width: 30%;
+	font-size: 20px;
+	/*animation: mypaper 1s;*/	
+}
+
+.papers td, th{
+	border-color: 
+}
+
+#closee{
+	position: absolute; top: -1mm; right: -1mm;
+	cursor: pointer;
+}
+
+#AE{
+	display: none;
+}
+
+#AG{
+	display: none;
+}
+
+#AR{
+	display: none;
+}
+
+#BM{
+	display: none;
+}
+
+#BT{
+	display: none;
+}
+
+#CE{
+	display: none;
+}
+
+#CH{
+	display: none;
+}
+
+#CS{
+	display: none;
+}
+
+#CY{
+	display: none;
+}
+
+#EC{
+	display: none;
+}
+
+#EE{
+	display: none;
+}
+
+#ES{
+	display: none;
+}
+
+#GG{
+	display: none;
+}
+
+#IN{
+	display: none;
+}
+
+#MA{
+	display: none;
+}
+
+#ME{
+	display: none;
+}
+
+#MN{
+	display: none;
+}
+
+#MT{
+	display: none;
+}
+
+#PE{
+	display: none;
+}
+
+#PH{
+	display: none;
+}
+
+#PI{
+	display: none;
+}
+
+#ST{
+	display: none;
+}
+
+#TF{
+	display: none;
+}
+
+#foot {
+	position: absolute;
+	margin: -8px;
+	width: 100%;
+	background: #111;
+}
